@@ -1,0 +1,35 @@
+
+html{
+    width: 95%;
+    margin: auto;
+}
+header>h1{
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    height:100PX;
+    margin-bottom: 0;
+    color: white;
+    font-family: sans-serif;
+}
+nav {
+    background-color: dimgray;
+    border-top: 0;
+}
+nav>a{
+    color: green;
+    text-decoration: none;
+    text-decoration-color: red;
+
+}
+article{
+    background-color: lightgrey;
+    padding-top: 15px;
+    margin-top: 3px;
+}
+header>h2{
+    color: dimgray;
+    text-decoration-line: underline;
+
+}
+
