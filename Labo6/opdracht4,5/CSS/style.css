@@ -1,0 +1,29 @@
+body  {
+    font-family: Verdana, sans-serif;
+    font-size: 1.1em;
+    background-color: silver;
+    color: black;
+}
+h1{
+    font-variant: small-caps;
+    background-color: red;
+}
+a:hover {
+    border-color: black;
+}
+.stippeltjesrand {
+
+    border-style: dotted;
+    border-width: thick ;
+}
+a>img {
+    height: 40PX;
+}
+ul
+{
+    list-style-image: url(Labo6/opdracht4,5/images/checked.png);
+
+}
+.checklist{
+    list-style-image: url(Labo6/opdracht4,5/images/nietchecked.png);
+}
