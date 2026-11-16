@@ -1,0 +1,131 @@
+html {
+    font-family: "Copperplate Gothic Light", sans-serif;
+    width: 100vw;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    margin: 0;
+}
+
+nav {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: url("../Images/CURSOR.png") 17 5, auto;
+
+}
+
+a:hover {
+    color: lightgray;
+
+}
+
+nav {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+p {
+    width: fit-content;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20PX
+}
+
+nav > p {
+    animation: mover 15s linear infinite;
+}
+
+@keyframes mover {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+
+.game {
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 25px;
+}
+
+.game>h1 {
+    color: #330000;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.game>p {
+    margin-bottom: 20px;
+}
+
+canvas {
+    max-width: 100%;
+    background: #6E6E6E;
+    border: 5px solid white;
+    border-radius: 12px;
+}
+
+.controls {
+    margin: 15px;
+    color: #ccc;
+}
+
+button {
+    padding: 12px 30px;
+    background: #B3B3B3;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#menu {
+    background: black;
+    color: white;
+    width: 900px;
+    height: 450px;
+    text-align: center;
+    font-family: Arial , serif;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+#menu h1 {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.levels {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    justify-content: center;
+    gap: 25px;
+}
+.levels button {
+    background: #36bd50;
+    height: 80px;
+    font-size: 18px;
+    cursor: url("../Images/CURSOR.png") 17 5, auto;
+    transition: 0.2s;
+}
+.levels button:hover {
+    background: #238b38;
+    transform: scale(1.08);
+}
+
+#game {
+    display: none;
+}

@@ -1,0 +1,39 @@
+
+#vrienden table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    border: 1px solid #36bd50;
+    border-radius: 8px;
+}
+
+#vrienden table th {
+    background: #36bd50;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+#vrienden table td {
+    color: black;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #222;
+}
+
+#vrienden table tbody tr.alt td {
+    background-color: #111;
+    color: #DDD;
+}
+
+
+
+
+
+#vrienden table tbody tr td.onbekend {
+    background-color: #8b0000;
+    color: #FFFFFF;
+    font-weight: bold;
+}

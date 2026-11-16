@@ -1,0 +1,43 @@
+#kalender-sectie table {
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 350px;
+    margin: 20px auto;
+    background-color: #fff;
+}
+
+#kalender-sectie th,
+#kalender-sectie td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 50px;
+}
+
+#kalender-sectie table caption {
+    background-color: rgb(170, 170, 200);
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#kalender-sectie table thead {
+    background-color: rgb(35, 37, 70);
+    color: rgb(200, 190, 240);
+    font-weight: bold;
+}
+
+#kalender-sectie tbody td.andere-maand {
+    color: #999;
+}
+
+#kalender-sectie tbody td:first-child,
+#kalender-sectie tbody td:last-child {
+    background-color: rgb(255, 220, 220);
+}
+
+#kalender-sectie tbody tr td.feestdag {
+    background-color: rgb(250, 120, 120);
+    font-weight: bold;
+}

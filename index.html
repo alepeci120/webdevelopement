@@ -1,40 +1,88 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Web Developement 1</title>
-</head>
-<link rel="stylesheet" href="CSS_Index/style.css" />
+	<head>
+		<meta charset="UTF-8">
+		<title>Web Development 1</title>
 
-<body>
-<nav>
-    <p>XXXXXXXXXXXXXXXXX hallo XXXXXXXXXXXXXXXX </p>
-</nav>
-<div>
-    <h1>Web Developement 1</h1>
+		<link rel="stylesheet" href="/_HOME/CSS/style.css"/>
+	</head>
 
-</div>
+	<body>
 
-<a href="Labo1/index.html">Labo 1</a>
-<br>
-<a href="Labo3/opdracht1/index.html">Labo 3.1 MIJN HOME PAGINA</a>
-<br>
-<a href="Labo3/opdracht2/index.html">Labo 3.2 CONTACTGEGEVENS VIVES</a>
-<br>
-<a href="Labo3/opdracht_opleidingsaanbod/index.html">OPDRACHT OPLEIDINGSAANBOD</a>
-<br>
-<a href="SUPERHERO/index.html">EXTRA SUPERHERO BATMAN</a>
-<br>
-<a href="Labo5/Opdracht6/index.html">LABO 5 OEFENING 6 </a>
-<br>
-<a href="Labo6/opdracht4,5/index.html">LABO 6 OEFENING 4 EN 5</a>
-<br>
-<a href="Labo6/Opdracht_cv/cv.html">OPDRACHT CV</a>
-<br>
-<a href="Labo7/Opgave_nature_blog">OPDRACHT OPGAVE NATURE BLOG</a>
-<br>
+		<div>
+			<nav>
+				<p>XXXXXXXXXXXXXXXXX hallo XXXXXXXXXXXXXXXX</p>
+			</nav>
+		</div>
 
-<p>hallooo</p>
+		<div>
+			<h1>Web Development 1</h1>
+		</div>
 
-</body>
+		<div>
+			<a href="Labo1/index.html">Labo 1</a>
+			<br>
+
+			<a href="Labo3/opdracht1/index.html">Labo 3.1 MIJN HOME PAGINA</a>
+			<br>
+
+			<a href="Labo3/opdracht2/index.html">Labo 3.2 CONTACTGEGEVENS VIVES</a>
+			<br>
+
+			<a href="Labo3/opdracht_opleidingsaanbod/index.html">OPDRACHT OPLEIDINGSAANBOD</a>
+			<br>
+
+			<a href="SUPERHERO/index.html">EXTRA SUPERHERO BATMAN</a>
+			<br>
+
+			<a href="Labo5/Opdracht6/index.html">LABO 5 OEFENING 6</a>
+			<br>
+
+			<a href="Labo6/opdracht4,5/index.html">LABO 6 OEFENING 4 EN 5</a>
+			<br>
+
+			<a href="Labo6/Opdracht_cv/cv.html">OPDRACHT CV</a>
+			<br>
+
+			<a href="Labo7/Opgave_nature_blog">OPDRACHT OPGAVE NATURE BLOG</a>
+			<br>
+		</div>
+
+		<div class="game">
+
+			<h1>JUMP TO OPEN THE LABO</h1>
+			<p>Get to the door of each labo</p>
+
+			<div id="menu">
+				<h1>SELECT LABO</h1>
+
+				<div class="levels">
+					<button onclick="selectLevel(1)">NIVEL 1</button>
+					<button onclick="selectLevel(2)">NIVEL 2</button>
+					<button onclick="selectLevel(3)">NIVEL 3</button>
+					<button onclick="selectLevel(4)">NIVEL 4</button>
+					<button onclick="selectLevel(5)">NIVEL 5</button>
+					<button onclick="selectLevel(6)">NIVEL 6</button>
+					<button onclick="selectLevel(7)">NIVEL 7</button>
+					<button onclick="selectLevel(8)">NIVEL 8</button>
+					<button onclick="selectLevel(9)">NIVEL 9</button>
+				</div>
+			</div>
+
+			<canvas id="game" width="900" height="450"></canvas>
+
+			<div class="controls">
+				← → Move | Space Jump
+			</div>
+
+			<button id="restartButton" onclick="restartGame()" style="display:none">
+				Restart
+			</button>
+
+		</div>
+
+		<script src="_HOME/JAVA/script.js"></script>
+
+	</body>
 </html>
