@@ -19,7 +19,9 @@ let labo = [
     "Labo5/Opdracht6/index.html",
     "Labo6/opdracht4,5/index.html",
     "Labo6/Opdracht_cv/cv.html",
-    "Labo7/Opgave_nature_blog"
+    "Labo7/Opgave_nature_blog",
+    "Labo7/Opdracht_2/index.html",
+    "Labo7/opdracht_kalender/index.html",
 ];
 
 const player = {
@@ -40,7 +42,7 @@ function loadLevel() {
 
     const levelData = [
 
-        // NIVEL 1 - LABO 1
+        // NIVEL 1
         {
             platforms: [
                 {x:0,y:410,w:180,h:40},
@@ -59,7 +61,7 @@ function loadLevel() {
             ]
         },
 
-        // NIVEL 2 - LABO 3.1
+        // NIVEL 2
         {
             platforms: [
                 {x:0,y:410,w:130,h:40},
@@ -81,7 +83,7 @@ function loadLevel() {
             ]
         },
 
-        // NIVEL 3 - LABO 3.2
+        // NIVEL 3
         {
             platforms: [
                 {x:0,y:410,w:110,h:40},
@@ -103,7 +105,7 @@ function loadLevel() {
             ]
         },
 
-        // NIVEL 4 - OPLEIDINGSAANBOD
+        // NIVEL 4
         {
             platforms: [
                 {x:0,y:410,w:100,h:40},
@@ -127,7 +129,7 @@ function loadLevel() {
             ]
         },
 
-        // NIVEL 5 - SUPERHERO BATMAN
+        // NIVEL 5
         {
             platforms: [
                 {x:0,y:410,w:100,h:40},
@@ -151,7 +153,7 @@ function loadLevel() {
             ]
         },
 
-        // NIVEL 6 - LABO 5
+        // NIVEL 6
         {
             platforms: [
                 {x:0,y:410,w:90,h:40},
@@ -177,7 +179,7 @@ function loadLevel() {
             ]
         },
 
-        // NIVEL 7 - LABO 6 OEFENING 4 EN 5
+        // NIVEL 7
         {
             platforms: [
                 {x:0,y:410,w:80,h:40},
@@ -203,7 +205,7 @@ function loadLevel() {
             ]
         },
 
-        // NIVEL 8 - CV
+        // NIVEL 8
         {
             platforms: [
                 {x:0,y:410,w:80,h:40},
@@ -231,7 +233,7 @@ function loadLevel() {
             ]
         },
 
-        // NIVEL 9 - NATURE BLOG
+        // NIVEL 9
         {
             platforms: [
                 {x:0,y:410,w:70,h:40},
@@ -256,6 +258,76 @@ function loadLevel() {
                 {x:590,y:200,w:30,h:20},
                 {x:670,y:130,w:30,h:20},
                 {x:750,y:260,w:30,h:20}
+            ]
+        },
+        //level 10
+        {
+            platforms: [
+                {x:0,y:450,w:120,h:30},
+                {x:150,y:390,w:55,h:15},
+                {x:240,y:330,w:45,h:15},
+                {x:320,y:400,w:35,h:15},
+                {x:390,y:280,w:40,h:15},
+                {x:470,y:350,w:35,h:15},
+                {x:540,y:220,w:40,h:15},
+                {x:620,y:300,w:30,h:15},
+                {x:690,y:180,w:35,h:15},
+                {x:770,y:260,w:30,h:15},
+                {x:840,y:350,w:35,h:15},
+                {x:920,y:280,w:30,h:15},
+                {x:1000,y:400,w:100,h:30}
+            ],
+            spikes: [
+                {x:125,y:430,w:35,h:20},
+                {x:210,y:370,w:30,h:20},
+                {x:280,y:310,w:35,h:20},
+                {x:350,y:380,w:30,h:20},
+                {x:430,y:260,w:35,h:20},
+                {x:490,y:330,w:30,h:20},
+                {x:580,y:200,w:35,h:20},
+                {x:650,y:280,w:30,h:20},
+                {x:730,y:160,w:35,h:20},
+                {x:800,y:240,w:30,h:20},
+                {x:880,y:330,w:35,h:20},
+                {x:950,y:260,w:30,h:20}
+            ]
+        },
+        // LEVEL 11
+        {
+            platforms: [
+                {x:0,y:450,w:90,h:25},
+                {x:115,y:410,w:35,h:12},
+                {x:185,y:340,w:30,h:12},
+                {x:250,y:430,w:25,h:12},
+                {x:315,y:300,w:30,h:12},
+                {x:385,y:370,w:25,h:12},
+                {x:450,y:240,w:25,h:12},
+                {x:515,y:330,w:25,h:12},
+                {x:580,y:190,w:25,h:12},
+                {x:645,y:280,w:25,h:12},
+                {x:710,y:150,w:25,h:12},
+                {x:775,y:250,w:25,h:12},
+                {x:840,y:180,w:25,h:12},
+                {x:905,y:320,w:25,h:12},
+                {x:970,y:230,w:25,h:12},
+                {x:870,y:410,w:30,h:40}
+            ],
+            spikes: [
+                {x:90,y:450,w:25,h:20},
+                {x:155,y:390,w:30,h:20},
+                {x:215,y:320,w:30,h:20},
+                {x:280,y:410,w:30,h:20},
+                {x:345,y:280,w:30,h:20},
+                {x:410,y:350,w:30,h:20},
+                {x:475,y:220,w:30,h:20},
+                {x:540,y:310,w:30,h:20},
+                {x:605,y:170,w:30,h:20},
+                {x:670,y:260,w:30,h:20},
+                {x:735,y:130,w:30,h:20},
+                {x:800,y:230,w:30,h:20},
+                {x:865,y:160,w:30,h:20},
+                {x:930,y:300,w:30,h:20},
+                {x:995,y:210,w:30,h:20}
             ]
         }
     ];
