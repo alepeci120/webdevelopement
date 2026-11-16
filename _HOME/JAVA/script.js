@@ -377,6 +377,15 @@ document.addEventListener("keyup", e => {
 function clearKeys() {
     keys = {};
 }
+document.addEventListener("keydown", function(event) {
+    if( gameOver ) {
+
+        if (event.key === "Enter") {
+
+            restartGame();
+        }
+    }
+});
 
 // COLISIONES
 
@@ -564,18 +573,14 @@ function draw() {
         ctx.fillText("GAME OVER", 450, 190);
 
         ctx.font = "22px Arial";
-        ctx.fillText("Pulsa REINICIAR para volver a jugar", 450, 255);
+        ctx.fillText("Enter to restart", 450, 255);
 
         ctx.textAlign = "left";
     }
 
-    // MOSTRAR BOTÓN REINICIAR
 
-    const restartButton = document.getElementById("restartButton");
 
-    if (restartButton) {
-        restartButton.style.display = gameOver ? "block" : "none";
-    }
+
 }
 
 // BUCLE PRINCIPAL

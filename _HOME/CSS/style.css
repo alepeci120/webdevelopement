@@ -1,6 +1,7 @@
+
 html {
     font-family: "Copperplate Gothic Light", sans-serif;
-    width: 100vw;
+    width: 100%;
 }
 
 body {
@@ -13,30 +14,8 @@ nav {
     background-color: white;
     color: black;
     text-align: center;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    cursor: url("../Images/CURSOR.png") 17 5, auto;
-
-}
-
-a:hover {
-    color: lightgray;
-
-}
-
-nav {
     overflow: hidden;
     white-space: nowrap;
-}
-
-p {
-    width: fit-content;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 20PX
 }
 
 nav > p {
@@ -52,6 +31,22 @@ nav > p {
     }
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    cursor: url("../Images/CURSOR.png") 17 5, auto;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+p {
+    width: fit-content;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
 
 .game {
     background: black;
@@ -59,29 +54,44 @@ nav > p {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 50px);
+    box-sizing: border-box;
 }
 
-.game>h1 {
+.game > h1 {
     color: #330000;
     font-size: 42px;
     margin-bottom: 10px;
 }
 
-.game>p {
-    margin-bottom: 20px;
+.game > p {
+    margin: 20px auto;
 }
 
 canvas {
+    display: block;
     max-width: 100%;
     background: #6E6E6E;
     border: 5px solid white;
     border-radius: 12px;
+    box-sizing: border-box;
 }
 
 .controls {
-    margin: 15px;
+    margin: 10px 0 ;
     color: #ccc;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
+
 
 button {
     padding: 12px 30px;
@@ -95,37 +105,44 @@ button {
 #menu {
     background: black;
     color: white;
-    width: 900px;
-    height: 450px;
+    width: 1100px;
+    min-height: 650px;
     text-align: center;
-    font-family: Arial , serif;
-    padding-top: 30px;
+    font-family: Arial, serif;
     box-sizing: border-box;
+    margin: auto;
 }
-
 #menu h1 {
     font-size: 35px;
     margin-bottom: 50px;
 }
 
 .levels {
+    margin: 20px;
     display: grid;
     grid-template-columns: repeat(3, 120px);
     justify-content: center;
     gap: 25px;
 }
+
 .levels button {
+    margin: 5px;
     background: #36bd50;
     height: 80px;
     font-size: 18px;
     cursor: url("../Images/CURSOR.png") 17 5, auto;
     transition: 0.2s;
 }
+
 .levels button:hover {
     background: #238b38;
     transform: scale(1.08);
 }
 
 #game {
+    display: none;
+}
+
+#hidden{
     display: none;
 }
