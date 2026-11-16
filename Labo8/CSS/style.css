@@ -1,0 +1,29 @@
+main {
+    display: flex;
+    box-sizing: border-box;
+    gap: 10PX;
+margin: 10px;
+
+}
+body{
+    margin: 0;
+}
+html{
+margin: 0;}
+section {
+    width: 50%;
+    border-style: solid;
+}
+
+
+html {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+p {
+    margin: 0;
+}
